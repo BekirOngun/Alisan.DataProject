@@ -19,6 +19,8 @@ namespace DataProject.App
             SpListManager.SpSaveAylikIseGirenler();
             SpListManager.SpSaveHaftalikIseGirenler();
 
+            // yeni test
+
             Console.WriteLine("Sp ye aktarım tamamlandı");
         }
     }
