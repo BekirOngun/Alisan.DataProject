@@ -22,6 +22,8 @@ namespace DataProject.App.Infrastructure
 
                 list.ForEach(t =>
                 {
+
+                    // test
                     var listItem = spList.AddItem(itemCreateInfo);
                     listItem[SpListFieldNames.PersonelAylikIseGirenler.SicilNo] = t.SicilNo;
                     listItem[SpListFieldNames.PersonelAylikIseGirenler.AdSoyad] = t.AdSoyad;
