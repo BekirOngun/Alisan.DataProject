@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LogoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BI_REPORTS.dbo.TBL_BI_REPORT_IK_SICIL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TBL_BI_REPORT_IK_SICIL">
+          <Key>
+            <PropertyRef Name="Cinsiyet" />
+            <PropertyRef Name="DOĞUM TARİHİ" />
+          </Key>
+          <Property Name="SicilNo" Type="varchar" MaxLength="17" />
+          <Property Name="Ad" Type="varchar" MaxLength="21" />
+          <Property Name="Soyad" Type="varchar" MaxLength="21" />
+          <Property Name="KurumKodu" Type="smallint" />
+          <Property Name="KurumAdi" Type="varchar" MaxLength="61" />
+          <Property Name="IsYeriKodu" Type="smallint" />
+          <Property Name="IsYeriAdi" Type="varchar" MaxLength="61" />
+          <Property Name="BolumKodu" Type="smallint" />
+          <Property Name="BolumAdi" Type="varchar" MaxLength="61" />
+          <Property Name="AltBolumKodu" Type="varchar" MaxLength="20" />
+          <Property Name="AltBolumAdi" Type="varchar" MaxLength="255" />
+          <Property Name="BirimKodu" Type="smallint" />
+          <Property Name="BirimAdi" Type="varchar" MaxLength="61" />
+          <Property Name="PozisyonKodu" Type="varchar" MaxLength="101" />
+          <Property Name="PozisyonAdı" Type="varchar" MaxLength="81" />
+          <Property Name="Cinsiyet" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="DereceKodu" Type="varchar" MaxLength="101" />
+          <Property Name="DereceAdi" Type="varchar" MaxLength="81" />
+          <Property Name="BordroKodu" Type="varchar" MaxLength="25" />
+          <Property Name="IseGirisTarihi" Type="varchar" MaxLength="30" />
+          <Property Name="IstenCikisTarihi" Type="varchar" MaxLength="30" />
+          <Property Name="KidemYil" Type="int" />
+          <Property Name="BirincilYoneticiSicilNo" Type="varchar" MaxLength="17" />
+          <Property Name="BirincilYoneticiAd" Type="varchar" MaxLength="21" />
+          <Property Name="BirincilYoneticiSoyad" Type="varchar" MaxLength="21" />
+          <Property Name="BirincilYoneticiUnvanKodu" Type="varchar" MaxLength="41" />
+          <Property Name="IkincilYoneticiSicilNo" Type="varchar" MaxLength="17" />
+          <Property Name="IkincilYoneticiAd" Type="varchar" MaxLength="21" />
+          <Property Name="IkincilYoneticiSoyad" Type="varchar" MaxLength="21" />
+          <Property Name="IkincilYoneticiUnvanKodu" Type="varchar" MaxLength="41" />
+          <Property Name="DOĞUM TARİHİ" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BI_REPORTS.dbo.TBL_BI_REPORT_IK_SICIL_OLD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TBL_BI_REPORT_IK_SICIL_OLD">
+          <Key>
+            <PropertyRef Name="Cinsiyet" />
+            <PropertyRef Name="DOĞUM TARİHİ" />
+          </Key>
+          <Property Name="SicilNo" Type="varchar" MaxLength="17" />
+          <Property Name="Ad" Type="varchar" MaxLength="21" />
+          <Property Name="Soyad" Type="varchar" MaxLength="21" />
+          <Property Name="KurumKodu" Type="smallint" />
+          <Property Name="KurumAdi" Type="varchar" MaxLength="61" />
+          <Property Name="IsYeriKodu" Type="smallint" />
+          <Property Name="IsYeriAdi" Type="varchar" MaxLength="61" />
+          <Property Name="BolumKodu" Type="smallint" />
+          <Property Name="BolumAdi" Type="varchar" MaxLength="61" />
+          <Property Name="AltBolumKodu" Type="varchar" MaxLength="20" />
+          <Property Name="AltBolumAdi" Type="varchar" MaxLength="255" />
+          <Property Name="BirimKodu" Type="smallint" />
+          <Property Name="BirimAdi" Type="varchar" MaxLength="61" />
+          <Property Name="PozisyonKodu" Type="varchar" MaxLength="101" />
+          <Property Name="PozisyonAdı" Type="varchar" MaxLength="81" />
+          <Property Name="Cinsiyet" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="DereceKodu" Type="varchar" MaxLength="101" />
+          <Property Name="DereceAdi" Type="varchar" MaxLength="81" />
+          <Property Name="BordroKodu" Type="varchar" MaxLength="25" />
+          <Property Name="IseGirisTarihi" Type="varchar" MaxLength="30" />
+          <Property Name="IstenCikisTarihi" Type="varchar" MaxLength="30" />
+          <Property Name="KidemYil" Type="int" />
+          <Property Name="BirincilYoneticiSicilNo" Type="varchar" MaxLength="17" />
+          <Property Name="BirincilYoneticiAd" Type="varchar" MaxLength="21" />
+          <Property Name="BirincilYoneticiSoyad" Type="varchar" MaxLength="21" />
+          <Property Name="BirincilYoneticiUnvanKodu" Type="varchar" MaxLength="41" />
+          <Property Name="IkincilYoneticiSicilNo" Type="varchar" MaxLength="17" />
+          <Property Name="IkincilYoneticiAd" Type="varchar" MaxLength="21" />
+          <Property Name="IkincilYoneticiSoyad" Type="varchar" MaxLength="21" />
+          <Property Name="IkincilYoneticiUnvanKodu" Type="varchar" MaxLength="41" />
+          <Property Name="DOĞUM TARİHİ" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="LogoModelStoreContainer">
+          <EntitySet Name="TBL_BI_REPORT_IK_SICIL" EntityType="Self.TBL_BI_REPORT_IK_SICIL" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[TBL_BI_REPORT_IK_SICIL].[SicilNo] AS [SicilNo], 
+[TBL_BI_REPORT_IK_SICIL].[Ad] AS [Ad], 
+[TBL_BI_REPORT_IK_SICIL].[Soyad] AS [Soyad], 
+[TBL_BI_REPORT_IK_SICIL].[KurumKodu] AS [KurumKodu], 
+[TBL_BI_REPORT_IK_SICIL].[KurumAdi] AS [KurumAdi], 
+[TBL_BI_REPORT_IK_SICIL].[IsYeriKodu] AS [IsYeriKodu], 
+[TBL_BI_REPORT_IK_SICIL].[IsYeriAdi] AS [IsYeriAdi], 
+[TBL_BI_REPORT_IK_SICIL].[BolumKodu] AS [BolumKodu], 
+[TBL_BI_REPORT_IK_SICIL].[BolumAdi] AS [BolumAdi], 
+[TBL_BI_REPORT_IK_SICIL].[AltBolumKodu] AS [AltBolumKodu], 
+[TBL_BI_REPORT_IK_SICIL].[AltBolumAdi] AS [AltBolumAdi], 
+[TBL_BI_REPORT_IK_SICIL].[BirimKodu] AS [BirimKodu], 
+[TBL_BI_REPORT_IK_SICIL].[BirimAdi] AS [BirimAdi], 
+[TBL_BI_REPORT_IK_SICIL].[PozisyonKodu] AS [PozisyonKodu], 
+[TBL_BI_REPORT_IK_SICIL].[PozisyonAdı] AS [PozisyonAdı], 
+[TBL_BI_REPORT_IK_SICIL].[Cinsiyet] AS [Cinsiyet], 
+[TBL_BI_REPORT_IK_SICIL].[DereceKodu] AS [DereceKodu], 
+[TBL_BI_REPORT_IK_SICIL].[DereceAdi] AS [DereceAdi], 
+[TBL_BI_REPORT_IK_SICIL].[BordroKodu] AS [BordroKodu], 
+[TBL_BI_REPORT_IK_SICIL].[IseGirisTarihi] AS [IseGirisTarihi], 
+[TBL_BI_REPORT_IK_SICIL].[IstenCikisTarihi] AS [IstenCikisTarihi], 
+[TBL_BI_REPORT_IK_SICIL].[KidemYil] AS [KidemYil], 
+[TBL_BI_REPORT_IK_SICIL].[BirincilYoneticiSicilNo] AS [BirincilYoneticiSicilNo], 
+[TBL_BI_REPORT_IK_SICIL].[BirincilYoneticiAd] AS [BirincilYoneticiAd], 
+[TBL_BI_REPORT_IK_SICIL].[BirincilYoneticiSoyad] AS [BirincilYoneticiSoyad], 
+[TBL_BI_REPORT_IK_SICIL].[BirincilYoneticiUnvanKodu] AS [BirincilYoneticiUnvanKodu], 
+[TBL_BI_REPORT_IK_SICIL].[IkincilYoneticiSicilNo] AS [IkincilYoneticiSicilNo], 
+[TBL_BI_REPORT_IK_SICIL].[IkincilYoneticiAd] AS [IkincilYoneticiAd], 
+[TBL_BI_REPORT_IK_SICIL].[IkincilYoneticiSoyad] AS [IkincilYoneticiSoyad], 
+[TBL_BI_REPORT_IK_SICIL].[IkincilYoneticiUnvanKodu] AS [IkincilYoneticiUnvanKodu], 
+[TBL_BI_REPORT_IK_SICIL].[DOĞUM TARİHİ] AS [DOĞUM TARİHİ]
+FROM [dbo].[TBL_BI_REPORT_IK_SICIL] AS [TBL_BI_REPORT_IK_SICIL]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TBL_BI_REPORT_IK_SICIL_OLD" EntityType="Self.TBL_BI_REPORT_IK_SICIL_OLD" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[TBL_BI_REPORT_IK_SICIL_OLD].[SicilNo] AS [SicilNo], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[Ad] AS [Ad], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[Soyad] AS [Soyad], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[KurumKodu] AS [KurumKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[KurumAdi] AS [KurumAdi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IsYeriKodu] AS [IsYeriKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IsYeriAdi] AS [IsYeriAdi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BolumKodu] AS [BolumKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BolumAdi] AS [BolumAdi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[AltBolumKodu] AS [AltBolumKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[AltBolumAdi] AS [AltBolumAdi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BirimKodu] AS [BirimKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BirimAdi] AS [BirimAdi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[PozisyonKodu] AS [PozisyonKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[PozisyonAdı] AS [PozisyonAdı], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[Cinsiyet] AS [Cinsiyet], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[DereceKodu] AS [DereceKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[DereceAdi] AS [DereceAdi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BordroKodu] AS [BordroKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IseGirisTarihi] AS [IseGirisTarihi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IstenCikisTarihi] AS [IstenCikisTarihi], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[KidemYil] AS [KidemYil], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BirincilYoneticiSicilNo] AS [BirincilYoneticiSicilNo], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BirincilYoneticiAd] AS [BirincilYoneticiAd], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BirincilYoneticiSoyad] AS [BirincilYoneticiSoyad], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[BirincilYoneticiUnvanKodu] AS [BirincilYoneticiUnvanKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IkincilYoneticiSicilNo] AS [IkincilYoneticiSicilNo], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IkincilYoneticiAd] AS [IkincilYoneticiAd], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IkincilYoneticiSoyad] AS [IkincilYoneticiSoyad], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[IkincilYoneticiUnvanKodu] AS [IkincilYoneticiUnvanKodu], 
+[TBL_BI_REPORT_IK_SICIL_OLD].[DOĞUM TARİHİ] AS [DOĞUM TARİHİ]
+FROM [dbo].[TBL_BI_REPORT_IK_SICIL_OLD] AS [TBL_BI_REPORT_IK_SICIL_OLD]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LogoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TBL_BI_REPORT_IK_SICIL">
+          <Key>
+            <PropertyRef Name="Cinsiyet" />
+            <PropertyRef Name="DOĞUM_TARİHİ" />
+          </Key>
+          <Property Name="SicilNo" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="Ad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="Soyad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="KurumKodu" Type="Int16" />
+          <Property Name="KurumAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="IsYeriKodu" Type="Int16" />
+          <Property Name="IsYeriAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="BolumKodu" Type="Int16" />
+          <Property Name="BolumAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="AltBolumKodu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="AltBolumAdi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BirimKodu" Type="Int16" />
+          <Property Name="BirimAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="PozisyonKodu" Type="String" MaxLength="101" FixedLength="false" Unicode="false" />
+          <Property Name="PozisyonAdı" Type="String" MaxLength="81" FixedLength="false" Unicode="false" />
+          <Property Name="Cinsiyet" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DereceKodu" Type="String" MaxLength="101" FixedLength="false" Unicode="false" />
+          <Property Name="DereceAdi" Type="String" MaxLength="81" FixedLength="false" Unicode="false" />
+          <Property Name="BordroKodu" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="IseGirisTarihi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="IstenCikisTarihi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="KidemYil" Type="Int32" />
+          <Property Name="BirincilYoneticiSicilNo" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="BirincilYoneticiAd" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="BirincilYoneticiSoyad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="BirincilYoneticiUnvanKodu" Type="String" MaxLength="41" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiSicilNo" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiAd" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiSoyad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiUnvanKodu" Type="String" MaxLength="41" FixedLength="false" Unicode="false" />
+          <Property Name="DOĞUM_TARİHİ" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="TBL_BI_REPORT_IK_SICIL_OLD">
+          <Key>
+            <PropertyRef Name="Cinsiyet" />
+            <PropertyRef Name="DOĞUM_TARİHİ" />
+          </Key>
+          <Property Name="SicilNo" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="Ad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="Soyad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="KurumKodu" Type="Int16" />
+          <Property Name="KurumAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="IsYeriKodu" Type="Int16" />
+          <Property Name="IsYeriAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="BolumKodu" Type="Int16" />
+          <Property Name="BolumAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="AltBolumKodu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="AltBolumAdi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BirimKodu" Type="Int16" />
+          <Property Name="BirimAdi" Type="String" MaxLength="61" FixedLength="false" Unicode="false" />
+          <Property Name="PozisyonKodu" Type="String" MaxLength="101" FixedLength="false" Unicode="false" />
+          <Property Name="PozisyonAdı" Type="String" MaxLength="81" FixedLength="false" Unicode="false" />
+          <Property Name="Cinsiyet" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DereceKodu" Type="String" MaxLength="101" FixedLength="false" Unicode="false" />
+          <Property Name="DereceAdi" Type="String" MaxLength="81" FixedLength="false" Unicode="false" />
+          <Property Name="BordroKodu" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="IseGirisTarihi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="IstenCikisTarihi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="KidemYil" Type="Int32" />
+          <Property Name="BirincilYoneticiSicilNo" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="BirincilYoneticiAd" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="BirincilYoneticiSoyad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="BirincilYoneticiUnvanKodu" Type="String" MaxLength="41" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiSicilNo" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiAd" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiSoyad" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+          <Property Name="IkincilYoneticiUnvanKodu" Type="String" MaxLength="41" FixedLength="false" Unicode="false" />
+          <Property Name="DOĞUM_TARİHİ" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="LogoDataModel" annotation:LazyLoadingEnabled="false">
+          <EntitySet Name="TBL_BI_REPORT_IK_SICIL" EntityType="Self.TBL_BI_REPORT_IK_SICIL" />
+          <EntitySet Name="TBL_BI_REPORT_IK_SICIL_OLD" EntityType="Self.TBL_BI_REPORT_IK_SICIL_OLD" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LogoModelStoreContainer" CdmEntityContainer="LogoDataModel">
+          <EntitySetMapping Name="TBL_BI_REPORT_IK_SICIL">
+            <EntityTypeMapping TypeName="LogoModel.TBL_BI_REPORT_IK_SICIL">
+              <MappingFragment StoreEntitySet="TBL_BI_REPORT_IK_SICIL">
+                <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="KurumKodu" ColumnName="KurumKodu" />
+                <ScalarProperty Name="KurumAdi" ColumnName="KurumAdi" />
+                <ScalarProperty Name="IsYeriKodu" ColumnName="IsYeriKodu" />
+                <ScalarProperty Name="IsYeriAdi" ColumnName="IsYeriAdi" />
+                <ScalarProperty Name="BolumKodu" ColumnName="BolumKodu" />
+                <ScalarProperty Name="BolumAdi" ColumnName="BolumAdi" />
+                <ScalarProperty Name="AltBolumKodu" ColumnName="AltBolumKodu" />
+                <ScalarProperty Name="AltBolumAdi" ColumnName="AltBolumAdi" />
+                <ScalarProperty Name="BirimKodu" ColumnName="BirimKodu" />
+                <ScalarProperty Name="BirimAdi" ColumnName="BirimAdi" />
+                <ScalarProperty Name="PozisyonKodu" ColumnName="PozisyonKodu" />
+                <ScalarProperty Name="PozisyonAdı" ColumnName="PozisyonAdı" />
+                <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+                <ScalarProperty Name="DereceKodu" ColumnName="DereceKodu" />
+                <ScalarProperty Name="DereceAdi" ColumnName="DereceAdi" />
+                <ScalarProperty Name="BordroKodu" ColumnName="BordroKodu" />
+                <ScalarProperty Name="IseGirisTarihi" ColumnName="IseGirisTarihi" />
+                <ScalarProperty Name="IstenCikisTarihi" ColumnName="IstenCikisTarihi" />
+                <ScalarProperty Name="KidemYil" ColumnName="KidemYil" />
+                <ScalarProperty Name="BirincilYoneticiSicilNo" ColumnName="BirincilYoneticiSicilNo" />
+                <ScalarProperty Name="BirincilYoneticiAd" ColumnName="BirincilYoneticiAd" />
+                <ScalarProperty Name="BirincilYoneticiSoyad" ColumnName="BirincilYoneticiSoyad" />
+                <ScalarProperty Name="BirincilYoneticiUnvanKodu" ColumnName="BirincilYoneticiUnvanKodu" />
+                <ScalarProperty Name="IkincilYoneticiSicilNo" ColumnName="IkincilYoneticiSicilNo" />
+                <ScalarProperty Name="IkincilYoneticiAd" ColumnName="IkincilYoneticiAd" />
+                <ScalarProperty Name="IkincilYoneticiSoyad" ColumnName="IkincilYoneticiSoyad" />
+                <ScalarProperty Name="IkincilYoneticiUnvanKodu" ColumnName="IkincilYoneticiUnvanKodu" />
+                <ScalarProperty Name="DOĞUM_TARİHİ" ColumnName="DOĞUM TARİHİ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_BI_REPORT_IK_SICIL_OLD">
+            <EntityTypeMapping TypeName="LogoModel.TBL_BI_REPORT_IK_SICIL_OLD">
+              <MappingFragment StoreEntitySet="TBL_BI_REPORT_IK_SICIL_OLD">
+                <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="KurumKodu" ColumnName="KurumKodu" />
+                <ScalarProperty Name="KurumAdi" ColumnName="KurumAdi" />
+                <ScalarProperty Name="IsYeriKodu" ColumnName="IsYeriKodu" />
+                <ScalarProperty Name="IsYeriAdi" ColumnName="IsYeriAdi" />
+                <ScalarProperty Name="BolumKodu" ColumnName="BolumKodu" />
+                <ScalarProperty Name="BolumAdi" ColumnName="BolumAdi" />
+                <ScalarProperty Name="AltBolumKodu" ColumnName="AltBolumKodu" />
+                <ScalarProperty Name="AltBolumAdi" ColumnName="AltBolumAdi" />
+                <ScalarProperty Name="BirimKodu" ColumnName="BirimKodu" />
+                <ScalarProperty Name="BirimAdi" ColumnName="BirimAdi" />
+                <ScalarProperty Name="PozisyonKodu" ColumnName="PozisyonKodu" />
+                <ScalarProperty Name="PozisyonAdı" ColumnName="PozisyonAdı" />
+                <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+                <ScalarProperty Name="DereceKodu" ColumnName="DereceKodu" />
+                <ScalarProperty Name="DereceAdi" ColumnName="DereceAdi" />
+                <ScalarProperty Name="BordroKodu" ColumnName="BordroKodu" />
+                <ScalarProperty Name="IseGirisTarihi" ColumnName="IseGirisTarihi" />
+                <ScalarProperty Name="IstenCikisTarihi" ColumnName="IstenCikisTarihi" />
+                <ScalarProperty Name="KidemYil" ColumnName="KidemYil" />
+                <ScalarProperty Name="BirincilYoneticiSicilNo" ColumnName="BirincilYoneticiSicilNo" />
+                <ScalarProperty Name="BirincilYoneticiAd" ColumnName="BirincilYoneticiAd" />
+                <ScalarProperty Name="BirincilYoneticiSoyad" ColumnName="BirincilYoneticiSoyad" />
+                <ScalarProperty Name="BirincilYoneticiUnvanKodu" ColumnName="BirincilYoneticiUnvanKodu" />
+                <ScalarProperty Name="IkincilYoneticiSicilNo" ColumnName="IkincilYoneticiSicilNo" />
+                <ScalarProperty Name="IkincilYoneticiAd" ColumnName="IkincilYoneticiAd" />
+                <ScalarProperty Name="IkincilYoneticiSoyad" ColumnName="IkincilYoneticiSoyad" />
+                <ScalarProperty Name="IkincilYoneticiUnvanKodu" ColumnName="IkincilYoneticiUnvanKodu" />
+                <ScalarProperty Name="DOĞUM_TARİHİ" ColumnName="DOĞUM TARİHİ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="4d5b907114eb4a43864aaaccb1575604" Name="Diagram1" ZoomLevel="70">
+        <EntityTypeShape EntityType="LogoModel.TBL_BI_REPORT_IK_SICIL" Width="2" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LogoModel.TBL_BI_REPORT_IK_SICIL_OLD" Width="1.5" PointX="8.375" PointY="1.125" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
